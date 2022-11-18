@@ -7,9 +7,9 @@ public class Wine {
     
     public Wine(String name, String type, int yFab, double price) {
         setName(name);
-        this.type = type;
-        this.yFab = yFab;
-        this.price = price;
+        setType(type);
+        setyFab(yFab);
+        setPrice(price);
     }            
     public String getName() {
         return name;
@@ -37,10 +37,10 @@ public class Wine {
     }
 
     public void Print(){
-        System.out.println(">> Wine name: " + getName);
-        System.out.println(">> Wine type: " + getType);
-        System.out.println(">> Wine year of fabrication: " + getyFab);
-        System.out.println(">> Wine price: " + getPrice);
+        System.out.println(">> Wine name: " + getName());
+        System.out.println(">> Wine type: " + getType());
+        System.out.println(">> Wine year of fabrication: " + getyFab());
+        System.out.println(">> Wine price: " + getPrice());
     }
     
 }
